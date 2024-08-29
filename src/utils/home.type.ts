@@ -47,4 +47,8 @@ interface AboutCompanyProps {
 interface ServiceProps {
     name: string;
     description: string;
+    serviceimage: {
+        url: string;
+        imgix_url: string
+    }
 }

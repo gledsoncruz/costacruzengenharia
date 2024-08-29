@@ -29,25 +29,25 @@ interface Menu {
 
 export function TopHeader({contact, menus, headingslogam, workerbanner, title}: TopHeaderProps) {
     return (
-        <header className="w-full flex flex-col bg-construcaoHeader bg-no-repeat bg-cover bg-left px-5 pt-5 gap-5 group shadow-xl shadow-gray-700">
+        <header className="group">
         {/* INICIO TOP HEANDER */}
         <div className="top-address">
-            <div className="flex flex-row items-center gap-3">                
+            <div className="item-address">                
                 <MapPinHouse color="white" size={16} />
                 <span className="text-white text-xs">{contact.address}</span>
             </div>
-            <div className="flex flex-row items-center gap-3">
+            <div className="item-address">
                 <Phone color="white" size={16} />
                 <span className="text-white text-xs">{contact.phone}</span>
             </div>
-            <div className="flex flex-row items-center gap-3">
+            <div className="item-address">
                 <MessageCircle color="white" size={16} />
                 <span className="text-white text-xs">{contact.cel}</span>
             </div>
         </div>
         {/* FIM TOP HEANDER */}
         {/* INICIO MENU */}
-        <nav className="w-full flex flex-row items-center justify-between h-16 px-5 font-medium bg-black bg-opacity-30 rounded-md max-w-7xl mx-auto">
+        <nav>
             <div className="text-white font-extrabold text-2xl">{title}</div>
             <div className="hidden md:flex md:flex-row md:gap-6 z-50">
                 {menus.map( menu => (

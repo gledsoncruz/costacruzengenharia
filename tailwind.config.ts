@@ -10,7 +10,6 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "construcaoHeader": "url('/construcao_civil_bg_header.jpg')",
-        "trabalhadoraConstrucao": "url('/trabalhador_construcao_civil.png')",
       }
     },
   },
